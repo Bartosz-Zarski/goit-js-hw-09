@@ -16,3 +16,19 @@ img {
   display: block;
   max-width: 100%;
 }
+
+.field {
+  
+  display: inline-block;
+  text-align: center;
+  margin-left: 5px;
+
+}
+.field:first-child {
+  margin-left: 0px;
+}
+.value {
+ display: block;
+font-size: 28px;
+
+}
