@@ -16,7 +16,7 @@ buttonStart.addEventListener('click', () => {
 });
 
 buttonEnd.addEventListener('click', () => {
-  let timerId = null
   clearInterval(timerId);
+  let timerId = null;
   buttonStart.removeAttribute('disabled');
 });
