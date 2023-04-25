@@ -30,6 +30,7 @@ const options = {
       buttonEl.addEventListener('click', () => {
         changeTimerValue(selectedDates[0]);
       });
+      if (s.innerHTML === '00') {}
     }
   },
 };
@@ -49,8 +50,10 @@ function changeTimerValue() {
       s.textContent = addLeadingZero(timerData.seconds);
     } else {
       clearInterval(timerId);
+      window.alert('Countdown has ended!');
     }
   }, 1000);
+  
 
   function addLeadingZero(value) {
     return String(value).padStart(2, '0');
